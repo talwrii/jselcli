@@ -1,0 +1,39 @@
+{
+	"name": "jselcli",
+	"version": "0.0.1",
+	"description": "template_description",
+	"main": "index.js",
+	"bin": {
+		"jselcli": "./jselcli.js"
+	},
+	"scripts": {
+		"coverage": "istanbul cover node_modules/tape/bin/tape tests/test.js && cat ./coverage/lcov.info | coveralls",
+		"docs": "documentation build */**.js -f html -o docs",
+		"istanbul": "istanbul cover node_modules/tape/bin/tape tests/test.js",
+		"test": "node ./tests/test.js"
+	},
+	"directories": {
+		"test": "tests"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/talwrii/jselcli.git"
+	},
+	"author": "Tal Wrii",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/talwrii/jselcli/issues"
+	},
+	"homepage": "https://github.com/talwrii/jselcli#readme",
+	"dependencies": {
+		"jsel": ">=1.1.6",
+		"argparse": ">=1.0.9"
+	},
+	"devDependencies": {
+		"coveralls": "^3.0.0",
+		"documentation": "^5.3.3",
+		"istanbul": "^0.4.5",
+		"moment": "^2.19.1",
+		"tape": "^4.8.0"
+	}
+}
