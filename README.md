@@ -3,6 +3,12 @@
 Use [Xpath](https://www.w3.org/TR/1999/REC-xpath-19991116/) to select items from JSON data from the command line.
 Makes use of Ali Chamas's [jsel](https://github.com/dragonworx/jsel).
 
+## Usage
+
+```
+cat blah.json | jselcli '*[@focused="true"]'
+```
+
 ## Install
 ```
 npm install -g jselcli
